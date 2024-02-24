@@ -1,0 +1,23 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Marzo 2023 - Junio 2023",
+    title: "Desarrollador Web y Aplicaciones Multiplataforma - ControlNet Telco Solutions",
+    description: `Desarrollo de aplicaciones en una consultoría informática. Utilizando lenguajes como: C#, VisualBasic,
+    JavaScript, Aspx y CSS.`,
+    link: "https://controlnet.es/",
+  },
+];
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
