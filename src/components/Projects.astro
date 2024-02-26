@@ -1,0 +1,68 @@
+---
+import KotlinIcon from './icons/Kotlin.astro';
+import JavaIcon from './icons/Java.astro';
+import PaperMCIcon from './icons/PaperMC.astro';
+import MinecraftIcon from './icons/Minecraft.astro';
+const TAGS = {
+  KOTLIN: {
+    name: "Kotlin",
+    class: "bg-purple-900/20 text-white",
+    icon: KotlinIcon
+  },
+  JAVA: {
+    name: "Java",
+    class: "bg-orange-600/20 text-white",
+    icon: JavaIcon
+  },
+  PAPERMC: {
+    name: "PaperMC",
+    class: "bg-cyan-400/20 text-white",
+    icon: PaperMCIcon
+  },
+  MINECRAFT: {
+    name: "Minecraft",
+    class: "bg-green-500/20 text-white",
+    icon: MinecraftIcon
+  }
+};
+const PROJECTS = [
+  {
+    title: "PerWorldWarps",
+    description:
+      "Plugin para crear teletransportes únicos para cada mundo de minecraft hecho en en lenguaje de programación Kotlin para servidores que usan la librería PaperMC.",
+    link: "https://github.com/AdrianOliva2/PerWorldWarps/releases/download/PluginV1.1/PerWorldWarps-1.1.jar",
+    github: "https://github.com/AdrianOliva2/PerWorldWarps",
+    image: "/projects/PerWorldWarpsLogo.png",
+    tags: [
+      TAGS.KOTLIN,
+      TAGS.JAVA,
+      TAGS.PAPERMC,
+      TAGS.MINECRAFT
+    ],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    <article>
+      <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+      <p class="text-lg mb-4 text-pretty">{description}</p>
+      <ul class="flex gap-x-2 flex-row">
+        {tags.map((tag) => (
+          <li>
+            <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}>
+              <tag.icon class="size-4"/>
+              {tag.name}
+            </span>
+          </li>
+        ))}
+      </ul>
+      <img
+        class="size-48 rounded-full shadow-2xl shadow-white/10"
+        src={image}
+        alt={`Logo del proyecto ${image}`}
+      />
+    </article>
+  ))
+}
