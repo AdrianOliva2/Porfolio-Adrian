@@ -98,7 +98,7 @@ const PROJECTS = [
       )}
 
       <p class="text-lg mb-4 text-pretty">{description}</p>
-      <ul class="flex flex-col gap-y-2 w-32 md:flex-row md:gap-x-2 md:w-full md:gap-y-0">
+      <ul class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols:5 xl:grid-cols-6 gap-2">
         {tags.map((tag) => (
           <li>
             <span
@@ -111,12 +111,12 @@ const PROJECTS = [
         ))}
       </ul>
       <img
-        class="size-48 rounded-lg my-2 shadow-2xl shadow-white/10"
+        class="size-48 rounded-lg my-4 shadow-2xl shadow-white/10"
         src={image}
         alt={`Logo del proyecto ${title}`}
       />
       {github && (
-        <div class="flex gap-x-2 flex-row mb-10">
+        <div class="flex gap-x-2 flex-row mb-12">
           <LinkPill href={github}>
             <GitHubIcon class="size-4" />
             Repositorio
