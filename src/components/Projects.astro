@@ -1,101 +1,111 @@
 ---
-import KotlinIcon from "./icons/Kotlin.astro";
-import JavaIcon from "./icons/Java.astro";
-import PaperMCIcon from "./icons/PaperMC.astro";
-import MinecraftIcon from "./icons/Minecraft.astro";
-import GitHubIcon from "./icons/GitHub.astro";
-import LinkPill from "./LinkPill.astro";
-import AstroIcon from "./icons/AstroIcon.astro";
-import TailwindIcon from "./icons/Tailwind.astro";
-import HTMLIcon from "./icons/HTML.astro";
-import CSSIcon from "./icons/CSS.astro";
-import JavaScriptIcon from "./icons/JavaScript.astro";
+import KotlinIcon from './icons/Kotlin.astro';
+import JavaIcon from './icons/Java.astro';
+import PaperMCIcon from './icons/PaperMC.astro';
+import MinecraftIcon from './icons/Minecraft.astro';
+import GitHubIcon from './icons/GitHub.astro';
+import LinkPill from './LinkPill.astro';
+import AstroIcon from './icons/AstroIcon.astro';
+import TailwindIcon from './icons/Tailwind.astro';
+import HTMLIcon from './icons/HTML.astro';
+import CSSIcon from './icons/CSS.astro';
+import JavaScriptIcon from './icons/JavaScript.astro';
+import ReactIcon from './icons/React.astro';
+import TypeScriptIcon from './icons/TypeScript.astro';
 
 const TAGS = {
   ASTRO: {
-    name: "Astro",
-    class: "bg-purple-900/20 text-white",
+    name: 'Astro',
+    class: 'bg-purple-900/20 text-white',
     icon: AstroIcon,
   },
   TAILWINDCSS: {
-    name: "Tailwind CSS",
-    class: "bg-purple-900/20 text-white",
+    name: 'Tailwind CSS',
+    class: 'bg-purple-900/20 text-white',
     icon: TailwindIcon,
   },
   HTML: {
-    name: "HTML",
-    class: "bg-purple-900/20 text-white",
+    name: 'HTML',
+    class: 'bg-purple-900/20 text-white',
     icon: HTMLIcon,
   },
   CSS: {
-    name: "CSS",
-    class: "bg-purple-900/20 text-white",
+    name: 'CSS',
+    class: 'bg-purple-900/20 text-white',
     icon: CSSIcon,
   },
   JAVASCRIPT: {
-    name: "JavaScript",
-    class: "bg-purple-900/20 text-white",
+    name: 'JavaScript',
+    class: 'bg-purple-900/20 text-white',
     icon: JavaScriptIcon,
   },
   KOTLIN: {
-    name: "Kotlin",
-    class: "bg-purple-900/20 text-white",
+    name: 'Kotlin',
+    class: 'bg-purple-900/20 text-white',
     icon: KotlinIcon,
   },
   JAVA: {
-    name: "Java",
-    class: "bg-orange-600/20 text-white",
+    name: 'Java',
+    class: 'bg-orange-600/20 text-white',
     icon: JavaIcon,
   },
   PAPERMC: {
-    name: "PaperMC",
-    class: "bg-cyan-400/20 text-white",
+    name: 'PaperMC',
+    class: 'bg-cyan-400/20 text-white',
     icon: PaperMCIcon,
   },
   MINECRAFT: {
-    name: "Minecraft",
-    class: "bg-green-500/20 text-white",
+    name: 'Minecraft',
+    class: 'bg-green-500/20 text-white',
     icon: MinecraftIcon,
+  },
+  REACT: {
+    name: 'React',
+    class: 'bg-blue-900/20 text-white',
+    icon: ReactIcon,
+  },
+  TYPESCRIPT: {
+    name: 'TypeScript',
+    class: 'bg-blue-600/20 text-white',
+    icon: TypeScriptIcon,
   },
 };
 const PROJECTS = [
-{
-    title: "Porfolio-Adrian-Minimal",
+  {
+    title: 'Porfolio-Adrian-Minimal',
     description:
-      "Este es mi porfolio personal en versión minima creado usando el framework Astro, junto con HTML, CSS, JavaScript, y JSX.",
-    link: "https://porfolio-minimal-adrian-oliva.netlify.app/",
-    github: "https://github.com/AdrianOliva2/porfolio-minimal",
-    image: "/projects/CapturaPorfolioMinimal.webp",
-    tags: [
-      TAGS.ASTRO,
-      TAGS.HTML,
-      TAGS.CSS,
-      TAGS.JAVASCRIPT,
-    ],
+      'Este es mi porfolio personal en versión minima creado usando el framework Astro, junto con HTML, CSS, JavaScript, y JSX.',
+    link: 'https://porfolio-minimal-adrian-oliva.netlify.app/',
+    github: 'https://github.com/AdrianOliva2/porfolio-minimal',
+    image: '/projects/CapturaPorfolioMinimal.webp',
+    tags: [TAGS.ASTRO, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
   {
-    title: "Porfolio-Adrian",
+    title: 'Porfolio-Adrian',
     description:
-      "Este es mi porfolio personal creado usando el framework Astro y TailwindCSS, junto con HTML, CSS, JavaScript, y JSX.",
-    link: "",
-    github: "https://github.com/AdrianOliva2/Porfolio-Adrian",
-    image: "/projects/CapturaPorfolio.webp",
-    tags: [
-      TAGS.ASTRO,
-      TAGS.TAILWINDCSS,
-      TAGS.HTML,
-      TAGS.CSS,
-      TAGS.JAVASCRIPT,
-    ],
+      'Este es mi porfolio personal creado usando el framework Astro y TailwindCSS, junto con HTML, CSS, JavaScript, y JSX.',
+    link: '',
+    github: 'https://github.com/AdrianOliva2/Porfolio-Adrian',
+    image: '/projects/CapturaPorfolio.webp',
+    tags: [TAGS.ASTRO, TAGS.TAILWINDCSS, TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
   {
-    title: "PerWorldWarps",
+    title: 'PerWorldWarps',
     description:
-      "Plugin para crear teletransportes únicos para cada mundo de minecraft hecho en en lenguaje de programación Kotlin para servidores que usan la librería PaperMC.",
-    link: "https://github.com/AdrianOliva2/PerWorldWarps/releases/latest",
-    github: "https://github.com/AdrianOliva2/PerWorldWarps",
-    image: "/projects/PerWorldWarpsLogo.webp",
+      'Plugin para crear teletransportes únicos para cada mundo de minecraft hecho en en lenguaje de programación Kotlin para servidores que usan la librería PaperMC.',
+    link: 'https://github.com/AdrianOliva2/PerWorldWarps/releases/latest',
+    github: 'https://github.com/AdrianOliva2/PerWorldWarps',
+    image: '/projects/PerWorldWarpsLogo.webp',
     tags: [TAGS.KOTLIN, TAGS.JAVA, TAGS.PAPERMC, TAGS.MINECRAFT],
+  },
+  {
+    title: 'Curso de React',
+    description:
+      'Este es un curso de React que he hecho para aprender React y están todos los proyectos de react que he hecho en este mismo repositorio.',
+    link: '',
+    github: 'https://github.com/AdrianOliva2/Curso-React',
+    image: '',
+    tags: [TAGS.REACT, TAGS.TYPESCRIPT, TAGS.JAVASCRIPT, TAGS.HTML, TAGS.CSS],
   },
 ];
 ---
@@ -104,35 +114,37 @@ const PROJECTS = [
   PROJECTS.map(({ image, title, description, tags, link, github }) => (
     <article>
       {link ? (
-        <a href={link} target="_blank" rel="noopener norreferer">
-          <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+        <a href={link} target='_blank' rel='noopener norreferer'>
+          <h3 class='text-2xl font-semibold text-yellow-200 mb-2'>{title}</h3>
         </a>
       ) : (
-        <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
+        <h3 class='text-2xl font-semibold text-yellow-200 mb-2'>{title}</h3>
       )}
 
-      <p class="text-lg mb-4 text-pretty">{description}</p>
-      <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols:5 xl:grid-cols-6 gap-2">
+      <p class='text-lg mb-4 text-pretty'>{description}</p>
+      <ul class='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols:5 xl:grid-cols-6 gap-2'>
         {tags.map((tag) => (
           <li>
             <span
               class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2`}
             >
-              <tag.icon class="size-4" />
+              <tag.icon class='size-4' />
               {tag.name}
             </span>
           </li>
         ))}
       </ul>
-      <img
-        class="size-48 rounded-lg my-4 shadow-2xl shadow-white/10"
-        src={image}
-        alt={`Logo del proyecto ${title}`}
-      />
+      {image !== '' && (
+        <img
+          class='size-48 rounded-lg mt-4 shadow-2xl shadow-white/10'
+          src={image}
+          alt={`Logo del proyecto ${title}`}
+        />
+      )}
       {github && (
-        <div class="flex gap-x-2 flex-row mb-12">
+        <div class='flex gap-x-2 flex-row mb-12 mt-4'>
           <LinkPill href={github}>
-            <GitHubIcon class="size-4" />
+            <GitHubIcon class='size-4' />
             Repositorio
           </LinkPill>
         </div>
