@@ -29,7 +29,7 @@ const { date, title, description, link } = Astro.props;
   {
     link && (
       <nav class="flex flex-row">
-        <LinkPill href="https://controlnet.es/" class="gap-x-0">
+        <LinkPill href={link} class="gap-x-0">
           Saber más
           <RightArrowIcon class="size-6" />
         </LinkPill>
