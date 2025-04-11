@@ -1,83 +1,84 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import Badge from "../components/Badge.astro";
-import LinkedInIcon from "../components/icons/LinkedIn.astro";
-import LinkPill from "../components/LinkPill.astro";
-import GitHubIcon from "../components/icons/GitHub.astro";
-import EMailIcon from "../components/icons/EMail.astro";
-import Experience from "../components/Experience.astro";
-import SectionContainer from "../components/SectionContainer.astro";
-import Briefcase from "../components/icons/Briefcase.astro";
-import PhoneIcon from "../components/icons/Phone.astro";
-import CodeIcon from "../components/icons/Code.astro";
-import Projects from "../components/Projects.astro";
+import Layout from '../layouts/Layout.astro'
+import Badge from '../components/Badge.astro'
+import LinkedInIcon from '../components/icons/LinkedIn.astro'
+import LinkPill from '../components/LinkPill.astro'
+import GitHubIcon from '../components/icons/GitHub.astro'
+import EMailIcon from '../components/icons/EMail.astro'
+import Experience from '../components/Experience.astro'
+import SectionContainer from '../components/SectionContainer.astro'
+import Briefcase from '../components/icons/Briefcase.astro'
+import PhoneIcon from '../components/icons/Phone.astro'
+import CodeIcon from '../components/icons/Code.astro'
+import Projects from '../components/Projects.astro'
 ---
 
 <Layout
-  title="Porfolio de Adrián - Desarrollador FullStack con 11 Meses de Experiencia"
-  description="Contrata a Adrián para crear tu aplicación web o móvil. Desarrollador FullStack y Multiplataforma."
+  title='Porfolio de Adrián - Desarrollador FullStack con 11 Meses de Experiencia'
+  description='Contrata a Adrián para crear tu aplicación web o móvil. Desarrollador FullStack y Multiplataforma.'
 >
-  <main class="px-4">
-    <SectionContainer class="pt-24 md:pt-44 pb-32">
+  <main class='px-4'>
+    <SectionContainer class='pt-24 md:pt-44 pb-32'>
       <img
-        id="sobre-mi"
-        class="rounded-full size-12 mb-4"
-        src="/me.webp"
-        alt="Adrian photo"
+        id='sobre-mi'
+        class='rounded-full size-12 mb-4'
+        src='/me.webp'
+        alt='Adrian photo'
       />
       <h1
-        class="text-white text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-10"
+        class='text-white text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-10'
       >
         Hey, soy Adrián
         <a
-          href="https://www.linkedin.com/in/adri%C3%A1n-oliva-del-r%C3%ADo-952038223"
-          target="_blank"
-          rel="noopener norreferer"
-          class="flex justify-center items-center"
+          href='https://www.linkedin.com/in/adri%C3%A1n-oliva-del-r%C3%ADo-952038223'
+          target='_blank'
+          rel='noopener norreferer'
+          class='flex justify-center items-center'
         >
           <Badge>Trabajando actualmente</Badge>
         </a>
       </h1>
-      <h2 class="text-2xl opacity-80">
-       11 meses de experiencia. Desarrollador FullStack y Aplicaciones Multiplataforma.
+      <h2 class='text-2xl opacity-80'>
+        11 meses de experiencia. Desarrollador FullStack y Aplicaciones
+        Multiplataforma.
       </h2>
 
       <nav
-        id="contacto"
-        class="flex flex-col md:flex-row gap-y-2 md:gap-y-0 md:gap-x-4 mt-8"
+        id='contacto'
+        class='flex flex-col md:flex-row gap-y-2 md:gap-y-0 md:gap-x-4 mt-8'
       >
         <LinkPill
-          href="http://www.linkedin.com/in/adri%C3%A1n-oliva-del-r%C3%ADo-952038223"
+          href='http://www.linkedin.com/in/adri%C3%A1n-oliva-del-r%C3%ADo-952038223'
         >
-          <LinkedInIcon class="size-6" />
+          <LinkedInIcon class='size-6' />
           LinkedIn
         </LinkPill>
-        <LinkPill href="https://github.com/AdrianOliva2">
-          <GitHubIcon class="size-6" />
+        <LinkPill href='https://github.com/AdrianOliva2'>
+          <GitHubIcon class='size-6' />
           GitHub
         </LinkPill>
-        <LinkPill href="mailto:adrian230902@hotmail.com">
-          <EMailIcon class="size-6" />
+        <LinkPill href='mailto:adrian230902@hotmail.com'>
+          <EMailIcon class='size-6' />
           adrian230902@hotmail.com
         </LinkPill>
-        <LinkPill href="tel:+34678345268">
-          <PhoneIcon class="size-6" />
+        <LinkPill href='tel:+34678345268'>
+          <PhoneIcon class='size-6' />
           Teléfono
         </LinkPill>
       </nav>
     </SectionContainer>
 
-    <SectionContainer id="experiencia">
-      <h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
-        <Briefcase class="size-7" />
+    <SectionContainer id='experiencia'>
+      <h2 class='text-3xl font-semibold mb-6 flex gap-x-2 items-center'>
+        <Briefcase class='size-7' />
         Experiencia laboral
       </h2>
       <Experience />
     </SectionContainer>
 
-    <SectionContainer id="proyectos">
-      <h2 class="text-3xl font-semibold mb-6 flex gap-x-2 items-center">
-        <CodeIcon class="size-7" />
+    <SectionContainer id='proyectos'>
+      <h2 class='text-3xl font-semibold mb-6 flex gap-x-2 items-center'>
+        <CodeIcon class='size-7' />
         Proyectos
       </h2>
       <Projects />

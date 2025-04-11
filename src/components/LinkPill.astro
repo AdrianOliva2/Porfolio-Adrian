@@ -1,9 +1,9 @@
 ---
-const { class: className } = Astro.props;
+const { class: className } = Astro.props
 ---
 
-<a 
-	class={`
+<a
+  class={`
 		bg-white/5 
 		border border-white/10 rounded-full 
 		flex justify-center items-center py-2 gap-x-2 px-4 
@@ -11,9 +11,9 @@ const { class: className } = Astro.props;
 		hover:scale-110 hover:bg-white/10 
 		${className}
 	`}
-	{...Astro.props}
-	target="_blank" 
-	rel="noopener noreferrer"
+  {...Astro.props}
+  target='_blank'
+  rel='noopener noreferrer'
 >
-    <slot/>
+  <slot />
 </a>

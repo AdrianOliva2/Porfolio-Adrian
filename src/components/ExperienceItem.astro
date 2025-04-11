@@ -1,37 +1,37 @@
 ---
-import LinkPill from "./LinkPill.astro";
-import RightArrowIcon from "./icons/RightArrow.astro";
+import LinkPill from './LinkPill.astro'
+import RightArrowIcon from './icons/RightArrow.astro'
 
 interface Props {
-  date: string;
-  title: string;
-  description: string;
-  link?: string;
+  date: string
+  title: string
+  description: string
+  link?: string
 }
 
-const { date, title, description, link } = Astro.props;
+const { date, title, description, link } = Astro.props
 ---
 
-<li class="mb-10 ms-4">
+<li class='mb-10 ms-4'>
   <div
-    class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white"
+    class='absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white'
   >
   </div>
-  <time class="mb-1 text-sm font-normal leading-none text-sky-200/80"
+  <time class='mb-1 text-sm font-normal leading-none text-sky-200/80'
     >{date}</time
   >
-  <h3 class="text-lg font-semibold text-yellow-200 mt-2">
+  <h3 class='text-lg font-semibold text-yellow-200 mt-2'>
     {title}
   </h3>
-  <p class="mb-4 text-base font-normal text-gray-200 text-pretty">
+  <p class='mb-4 text-base font-normal text-gray-200 text-pretty'>
     {description}
   </p>
   {
     link && (
-      <nav class="flex flex-row">
-        <LinkPill href={link} class="gap-x-0">
+      <nav class='flex flex-row'>
+        <LinkPill href={link} class='gap-x-0'>
           Saber más
-          <RightArrowIcon class="size-6" />
+          <RightArrowIcon class='size-6' />
         </LinkPill>
       </nav>
     )
